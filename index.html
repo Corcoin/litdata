@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitData - Digital Creativity & Mental Health</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            color: #333;
+        }
+        nav {
+            background: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav ul li {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #555;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .hero .creative-illustration {
+            width: 150px;
+            height: 150px;
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 600;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            animation: rotate 10s infinite linear;
+        }
+        .hero .title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero .description {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .hero .consult-button {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            color: white;
+            background: #333;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            animation: fadeIn 4s ease-in-out;
+        }
+        .hero .consult-button:hover {
+            background: #555;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .about, .services, .testimonials, .footer {
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about .content, .services .content, .testimonials .content, .footer .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about .content h2, .services .content h2, .testimonials .content h2, .footer .content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .about .content p, .services .content p, .testimonials .content p, .footer .content p {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        .services .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services .content ul li {
+            font-size: 1rem;
+            font-weight: 300;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .testimonials .content .testimonial {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+        }
+        .footer .content p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LitData</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="creative-illustration">LD</div>
+        <div class="title">LitData</div>
+        <div class="description">Consulting for Digital Creativity & Mental Health</div>
+        <button class="consult-button">Get in Touch</button>
+    </div>
+    <div id="about" class="about">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>At LitData, we specialize in merging digital creativity with mental health awareness. Our mission is to provide consulting services that help businesses harness the power of creative technologies while fostering a supportive environment for mental well-being.</p>
+        </div>
+    </div>
+    <div id="services" class="services">
+        <div class="content">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Creative Technology Consulting</li>
+                <li>Mental Health Workshops</li>
+                <li>Employee Wellness Programs</li>
+                <li>Custom Software Solutions</li>
+                <li>Interactive Media Design</li>
+            </ul>
+        </div>
+    </div>
+    <div id="testimonials" class="testimonials">
+        <div class="content">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"LitData transformed our approach to digital creativity and mental health. Their insights were invaluable."</p>
+                <p>- Client A</p>
+            </div>
+            <div class="testimonial">
+                <p>"The workshops provided by LitData have significantly improved our team's well-being and productivity."</p>
+                <p>- Client B</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="footer">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Reach out to us at <a href="mailto:contact@litdata.com">contact@litdata.com</a> for more information about our services and how we can help your business thrive.</p>
+        </div>
+    </div>
+</body>
+</html>
